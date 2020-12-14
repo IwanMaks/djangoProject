@@ -8,7 +8,7 @@
 
 
 {% block content %}
-    <div class="col-md-9">
+
           <div class="card mb-3">
               <div class="card-header">
                 Категория: <a href="{{ news_item.category.get_absolute_url }}">{{ news_item.category }}</a>
@@ -30,5 +30,5 @@
                   {{ news_item.created_at|date:"Y-m-d H:i" }}
               </div>
           </div>
-    </div>
+
 {% endblock %}
