@@ -11,14 +11,14 @@ from django.contrib.auth import login, logout
 from django.core.mail import send_mail
 
 
-def test(request):
+def feedback(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             mail = send_mail(form.cleaned_data['subject'], form.cleaned_data['content'], 'iwanmak71@yandex.ru', ['iwan.maksackov@yandex.ru'], fail_silently=False)
             if mail:
                 messages.success(request, 'Письмо отправлено!')
-                return redirect('test')
+                return redirect('feedback')
             else:
                 messages.error(request, 'Ошибка отправки')
         else:
