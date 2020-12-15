@@ -143,8 +143,8 @@ INTERNAL_IPS = [
 
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'iwanmak71@yandex.ru'
-EMAIL_HOST_PASSWORD = 'Relationship7109'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_SSL = False
 EMAIL_USE_TLS = True
 
